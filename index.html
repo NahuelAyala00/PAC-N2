@@ -37,6 +37,58 @@
             right: 0;
             margin: auto;
         }
+        
+        .texto {
+            font-size: 18px;
+        }
+        
+        #mainslider .carousel-inner,
+        #mainSlider .carousel-tem {
+            height: 90vh;
+        }
+        
+        #mainSlider .carousel-caption {
+            float: right;
+            left: 50%;
+            top: 80%;
+            color: #000000;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        
+        #mainSlider .carousel-caption h2 {
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+        
+        #mainSlider .carousel-caption p {
+            font-size: 22px;
+            font-weight: 300;
+            margin-bottom: 100px;
+            color: #000000;
+        }
+        
+        .main-btn {
+            background-color: #000000;
+            color: #000000;
+            text-transform: uppercase;
+            width: 200px;
+            height: 60px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: 30px solid transparent;
+        }
+        
+        .main-btn:hover {
+            text-decoration: none;
+            color: #000000;
+            background-color: transparent;
+            border-color: #e71515;
+        }
+        
+        .carousel-indicators .active {
+            background-color: #373737;
+        }
     </style>
 
 
@@ -51,105 +103,571 @@
 </head>
 
 <body>
-    <!--Java-->
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
-    <!--barra menu bg-black=fundo preto justify-content-between=posição do conteudo um pra cada lado-->
+
     <div class="navbar navbar-expand bg-black justify-content-between">
         <div class="container">
-            <!--Nome do grupo com texto branco-->
-            <a class="navbar-brand text-light" href="index.html">Robotic Generation</a>
+
+            <a class="navbar-brand text-light" href="#index">Robotic Generation</a>
             <ul class="navbar-nav ">
-                <!--botao pills=redondo m=margem entre os botoes-->
+
                 <li class="nav-pills active m-1">
-                    <a class="btn btn-outline-light px-4 py-2" href="index.html">Home</a>
+                    <a class="btn btn-outline-light px-4 py-2" href="#tinkercard1">Tinkercard</a>
                 </li>
+
                 <li class="nav-pills active m-1">
-                    <a class="btn btn-outline-light px-4 py-2" href="video.html">Video</a>
+                    <a class="btn btn-outline-light px-4 py-2" href="#componentes">Componentes</a>
                 </li>
-                <!--botao pills=redondo m=margem entre os botoes-->
+
                 <li class="nav-pills active m-1">
-                    <a class="btn btn-outline-light px-4 py-2" href="participantes.html">Participantes</a>
+                    <a class="btn btn-outline-light px-4 py-2" href="#video">Video</a>
                 </li>
-                <!--botao pills=redondo m=margem entre os botoes-->
-                <!--botao pills=redondo m=margem entre os botoes-->
+
                 <li class="nav-pills active m-1">
-                    <a class="btn btn-outline-light px-4 py-2" href="tinkercard.html">Tinkercard</a>
+                    <a class="btn btn-outline-light px-4 py-2" href="#criacao">Criação</a>
                 </li>
+
+                <li class="nav-pills active m-1">
+                    <a class="btn btn-outline-light px-4 py-2" href="#participantes">Participantes</a>
+                </li>
+
 
             </ul>
         </div>
     </div>
 
-    <!--posicionamento centralizado-->
+
     <div class="container">
 
 
-        <br><br><br><br><br><br><br>
+        <br><br><br><br><br>
+        <div id="tinkercard1">
+            <br><br>
 
-        <div class="d-flex justify-content-center text-light ">
-            <h1 class="font-weight-lighter">Componentes</h1>
+            <div class="d-flex justify-content-center text-light ">
+                <h1 class="font-weight-lighter">Tinkercard</h1>
+            </div>
+            <br><br>
+        </div>
+        <div class="container-fluid">
+            <div id="mainSlider" class="carousel" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-targer="#mainSlider" data-slide-to="0" class="active"></li>
+                    <li data-targer="#mainSlider" data-slide-to="1"></li>
+                    <li data-targer="#mainSlider" data-slide-to="2"></li>
+                    <li data-targer="#mainSlider" data-slide-to="3"></li>
+                    </li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <img src="tinkercard/tinkercard1.png" class="d-block w-70" alt="Tinkercard1">
+                            <div class="carousel-caption d-none d-md-block">
+
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tinkercard1">
+                                    Códigos1
+                                </button>
+                                <div class="modal fade" id="tinkercard1" tabindex="-1" role="dialog" aria-labelledby="tinkercard1" aria-hidden="true">
+                                    <div class="modal-dialog-scrollable modal-dialog modal-lg" role="document">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="tinkercard">Códigos usados na aula 1</h5>
+                                                <button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Fechar">
+                                                     
+                                                </button>
+                                            </div>
+
+                                            <div class="modal-body text-left ">
+                                                <p>// C++ code<br>
+                                                    <br> //
+                                                    <br> void setup()
+                                                    <br> {
+                                                    <br> pinMode(13, OUTPUT);
+                                                    <br> pinMode(11, OUTPUT);
+                                                    <br> pinMode(12, OUTPUT);
+                                                    <br> }
+                                                    <br>
+                                                    <br> void loop()
+                                                    <br> {
+                                                    <br> digitalWrite(13, HIGH);
+                                                    <br> delay(2000); // Wait for 2000 millisecond(s)
+                                                    <br> digitalWrite(13, LOW);
+                                                    <br> digitalWrite(11, HIGH);
+                                                    <br> delay(2000); // Wait for 2000 millisecond(s)
+                                                    <br> digitalWrite(11, LOW);
+                                                    <br> digitalWrite(12, HIGH);
+                                                    <br> delay(2000); // Wait for 2000 millisecond(s)
+                                                    <br> digitalWrite(12, LOW);
+                                                    <br>} </p>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                                <a href="https://www.tinkercad.com/things/jF1gdKXf4M8-start-simulating/editel?lessonid=EHD2303J3YPUS5Z&projectid=OIYJ88OJ3OPN3EA&collectionid=OIYJ88OJ3OPN3EA&sharecode=ZxPq4Q5PV7q7K7qTOTMZNb3ivqfnKxTP_wF22oRZc84" target="_blank">Ir para o tinkercard</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <img src="tinkercard/tinkercard2.png" class="d-block w-70" alt="Tinkercard2">
+                            <div class="carousel-caption d-none d-md-block">
+
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tinkercard2">
+                                    Códigos2
+                                </button>
+                                <div class="modal fade" id="tinkercard2" tabindex="-1" role="dialog" aria-labelledby="tinkercard2" aria-hidden="true">
+                                    <div class="modal-dialog-scrollable modal-dialog modal-lg" role="document">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="tinkercard">Códigos usados na aula 2</h5>
+                                                <button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Fechar">
+                                                     
+                                                </button>
+                                            </div>
+
+                                            <div class="modal-body text-left ">
+                                                <p>unsigned int sensor;<br>
+                                                    <br> int LED = 9;
+                                                    <br> void setup()
+                                                    <br> {
+                                                    <br> Serial.begin(9600);
+                                                    <br> pinMode(LED, OUTPUT);
+                                                    <br>
+                                                    <br> }
+                                                    <br>
+                                                    <br> void loop()
+                                                    <br> {
+                                                    <br> sensor = analogRead(A5);
+                                                    <br> Serial.println(sensor);
+                                                    <br>
+                                                    <br> if (sensor > 509){
+                                                    <br> digitalWrite(LED, HIGH);
+                                                    <br> }
+                                                    <br> else {
+                                                    <br> digitalWrite(LED, LOW);
+                                                    <br> }
+                                                    <br>
+                                                    <br> }
+                                                </p>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                                <a href="https://www.tinkercad.com/things/i91VX3uDs1T-ingenious-jaagub/editel?sharecode=MiDPvaMRjLB__6a26XLRi2PpzkFNAlQtBpcyM7_N-as" target="_blank">Ir para o tinkercard</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <img src="tinkercard/tinkercard3.png" class="d-block w-70" alt="Tinkercard3">
+                            <div class="carousel-caption d-none d-md-block">
+
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tinkercard3">
+                                    Códigos3
+                                </button>
+                                <div class="modal fade" id="tinkercard3" tabindex="-1" role="dialog" aria-labelledby="tinkercard3" aria-hidden="true">
+                                    <div class="modal-dialog-scrollable modal-dialog modal-lg" role="document">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="tinkercard">Códigos usados na aula 3</h5>
+                                                <button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Fechar">
+                                                     
+                                                </button>
+                                            </div>
+
+                                            <div class="modal-body text-left ">
+                                                <p>int velMotor = 3;<br>
+                                                    <br>int motorFrente = 2;
+                                                    <br> int motorTras = 4;
+                                                    <br> int vel = 255;
+                                                    <br>
+                                                    <br>
+                                                    <br> void setup()
+                                                    <br> {
+                                                    <br> pinMode(3, OUTPUT);
+                                                    <br> pinMode(2, OUTPUT);
+                                                    <br> pinMode(4, OUTPUT);
+                                                    <br>
+                                                    <br> analogWrite(3, 0); digitalWrite(2, LOW); digitalWrite(4, LOW);
+                                                    <br>
+                                                    <br> }
+                                                    <br>
+                                                    <br> void loop()
+                                                    <br> {
+                                                    <br>
+                                                    <br> //Sentido anti-horário
+                                                    <br> analogWrite(3, vel);
+                                                    <br> digitalWrite(2, HIGH);
+                                                    <br> digitalWrite(4, LOW);
+                                                    <br> delay(5000);
+                                                    <br>
+                                                    <br> //Desligando motor para inversão de sentido
+                                                    <br> analogWrite(3, 0);
+                                                    <br> digitalWrite(2, LOW);
+                                                    <br> digitalWrite(4, LOW);
+                                                    <br> delay(100);
+                                                    <br>
+                                                    <br> //Sentido horário
+                                                    <br> analogWrite(3, vel);
+                                                    <br> digitalWrite(4, HIGH);
+                                                    <br> digitalWrite(2, LOW);
+                                                    <br>delay(5000);
+                                                    <br>
+                                                    <br> //Desligando motor para inversão de sentido
+                                                    <br> analogWrite(3, 0);
+                                                    <br> digitalWrite(2, LOW);
+                                                    <br>digitalWrite(4, LOW);
+                                                    <br> delay(100);
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br> } </p>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                                <a href="https://www.tinkercad.com/things/8iz0S5Ec38b-funky-trug/editel?sharecode=k2e6QO8uT_HG2QdrfC9DqutjjDgyxL28KhgYRnCRp6U" target="_blank">Ir para o tinkercard</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <img src="tinkercard/tinkercard4.png" class="d-block w-70" alt="Tinkercard4">
+                            <div class="carousel-caption d-none d-md-block">
+
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tinkercard4">
+                                    Códigos4
+                                </button>
+                                <div class="modal fade" id="tinkercard4" tabindex="-1" role="dialog" aria-labelledby="tinkercard4" aria-hidden="true">
+                                    <div class="modal-dialog-scrollable modal-dialog modal-lg" role="document">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="tinkercard">Códigos usados na aula 4</h5>
+                                                <button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Fechar">
+                                                     
+                                                </button>
+                                            </div>
+
+                                            <div class="modal-body text-left ">
+                                                <p>ISR(PCINT0_vect){<br>
+                                                    <br> PORTD ^= 0b00110000;
+                                                    <br> }
+                                                    <br> ISR(PCINT2_vect){
+                                                    <br> PORTD ^= 0b00001100;
+                                                    <br> }
+                                                    <br>int main(void)
+                                                    <br>{
+                                                    <br> DDRD = 0b00111100;
+                                                    <br>PORTD = 0b00011000;
+                                                    <br>PCICR = 0b00000101;
+                                                    <br>PCMSK2 = 0b1000000;
+                                                    <br>PCMSK0 = 0b0000001;
+                                                    <br>sei();
+                                                    <br> while(1){
+                                                    <br> }
+                                                    <br> } </p>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                                <a href="https://www.tinkercad.com/things/8MpBM51jHkG-swanky-kieran/editel?sharecode=qqzCHwc30oC6FvU4K3Z7DMooNeTICI2ZwhG7opy4PZw" target="_blank">Ir para o tinkercard</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#mainSlider" class="carousel-control-prev" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previus</span>
+                </a>
+                <a href="#mainSlider" class="carousel-control-next" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <br><br>
+        <div id="componentes">
+            </li>
+            <br><br>
+            <div class="d-flex justify-content-center text-light ">
+                <h1 class="font-weight-lighter">Componentes e funções</h1>
+            </div>
+        </div>
+        <br><br><br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col order-last">
+                    <div class="card text-white bg-dark mb-lg-3" style="max-width: 28rem;">
+                        <div class="card-header">
+                            <h5 class="card-title text-center">Arduino</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class=" text-light text-center">
+                                <img src="componentes/arduino.png " width="150 " height="125 " alt="Arduino "><br> Open source ou hardware para prototipagem eletrônica, projetada com um microcontrolador Atmel AVR com suporte para entrada/saída dados já
+                                embutido, com linguagem de programação padrão baseado no em C/C++
+                                <br><br><br>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-white bg-dark mb-lg-3" style="max-width: 28rem;">
+                        <div class="card-header">
+                            <h5 class="card-title text-center">Placa de ensaio pequena</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class=" text-light text-center">
+                                <img src="componentes/placadeensaio.png " width="150 " height="125 " alt="Placa de ensaio pequena "><br> Uma placa com furos e conexões comumente utilizada na prototipagem de circuitos elétricos e eletrônicos, com a finalidade
+                                de testes e experimentos.
+                                <br><br><br><br><br><br>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col order-first">
+                    <div class="card text-white bg-dark mb-lg-3" style="max-width: 28rem;">
+                        <div class="card-header">
+                            <h5 class="card-title text-center">Motor CC</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class=" text-light text-center">
+                                <img src="componentes/motorcc.png " width="150 " height="125 " alt="Motor CC "><br> Os motores CC com excitação independente são utilizados normalmente em acionamentos de máquinas operatrizes como por exemplo, ferramentas
+                                de avanço, bombas a pistão, compressores, entre outras aplicações que é necessário um torque constante em toda a faixa de rotação. Tipos de motores de corrente contínua.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col order-last">
+                    <div class="card text-white bg-dark mb-lg-3" style="max-width: 28rem;">
+                        <div class="card-header">
+                            <h5 class="card-title text-center">Resistor</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class=" text-light text-center">
+
+                                <img src="componentes/resistor.png " width="150 " height="125 " alt="Resistor "><br> Limitar o fluxo de cargas elétricas por meio da conversão da energia elétrica em energia térmica.
+                                <br><br><br><br>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-white bg-dark mb-lg-3" style="max-width: 28rem;">
+                        <div class="card-header">
+                            <h5 class="card-title text-center">LED</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class=" text-light text-center">
+                                <img src="componentes/led.png " width="150 " height="125 " alt="LED "><br> Responsável por converter a voltagem da energia elétrica, que chega pelas tomadas, em voltagens menores, capazes de ser suportadas pelos componentes.
+                                <br><br><br>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col order-first">
+                    <div class="card text-white bg-dark mb-lg-3" style="max-width: 28rem;">
+                        <div class="card-header">
+                            <h5 class="card-title text-center">Fotorresistor</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class=" text-light text-center">
+                                <img src="componentes/fotorresistor.png " width="150 " height="125 " alt="Fotorresistor "><br> Componente eletrônico, sensível a luz, que tem por finalidade limitar a corrente elétrica que passa sobre ele, como um resistor
+                                comum, só que o grande diferencial é que ele é um resistor variável que interage com a luz.
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col order-last">
+                    <div class="card text-white bg-dark mb-lg-3" style="max-width: 28rem;">
+                        <div class="card-header">
+                            <h5 class="card-title text-center">Interruptor deslizante</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class=" text-light text-center">
+                                <img src="componentes/interruptordeslizante.png " width="150 " height="125 " alt="Interruptor deslizante "><br> Abre ou fecha circuitos elétricos, pelo qual se interrompe (de forma reversível) a passagem de um sinal em
+                                um circuito elétrico ou eletrônico.
+                                <br><br><br><br>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-white bg-dark mb-lg-3" style="max-width: 28rem;">
+                        <div class="card-header">
+                            <h5 class="card-title text-center">Bateria 9V</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class=" text-light text-center">
+                                <img src="componentes/bateria9v.png " width="150 " height="125 " alt="Bateria 9V "><br> Possui uma grande e vasta gama de aplicações, pode ser utilizada em multímetros, capacímetros, lanternas, brinquedos, também para alimentação
+                                do microcontrolador Arduino. É muito versátil e muito importante para o funcionamento dos circuitos eletrônicos.
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col order-first">
+                    <div class="card text-white bg-dark mb-lg-3" style="max-width: 28rem;">
+                        <div class="card-header">
+                            <h5 class="card-title text-center">Fonte de energia</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class=" text-light text-center">
+                                <img src="componentes/fontedeenergia.png " width="150 " height="125 " alt="Fonte de energia "><br> Responsável por converter a voltagem da energia elétrica, que chega pelas tomadas, em voltagens menores, capazes de ser
+                                suportadas pelos componentes.
+                                <br><br><br><br>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="video">
+            <div class="video1">
+
+                <br><br><br><br><br><br><br>
+                <div class="d-xl-flex justify-content-center text-light">
+                    <h1 class="font-weight-lighter">Video</h1>
+                </div>
+                <br><br>
+                <video controls poster="">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        <source src="video.ogv" type="video/ogg">
+        <object>
+          <embed src="video.mp4" type="application/x-shockwave-flash" 
+          allowfullscreen="false" allowscriptaccess="always">  		
+        </object>
+        Formato não suportado  
+      </video>
+            </div>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id="criacao">
+            <br><br>
+
+            <div class="d-lg-flex justify-content-center text-light">
+                <h1 class="font-weight-lighter">Criação</h1>
+            </div>
+            <br><br>
+        </div>
+        <div class="texto">
+            <div class="d-lg-flex justify-content-center">
+
+                <p class="rounded bg-light w-50 text-xl-left text-black p-3 m-1">
+                    Primeiramente elaboramos a logo do grupo, o nome da equipe e pensamos na melhor forma que poderiamos fazer com que fosse compreendido "por que robotica na TI?", seria introduzindo perguntas simples, atraves de uma entrevista guiando o entrevistado até
+                    o entendimento mais complexo sobre o assunto de Robotica e TI, em seguida pesquisamos imagens relacionadas ao tema para que juntamente com o video pudessemos responder a pergunta.
+                </p>
+
+                <p class="rounded bg-light w-50 text-xl-left text-black p-3 m-1">
+                    A ideia do nome do grupo surgiu do Guilherme e do João e todos concordamos, depois imaginamos a logo, onde todos participaram para a formação dela, e usamos o Adobe Photoshop para editala. A ideia do video foi da Nicolly, na qual o André e o Nahuel fizeram
+                    as perguntas para serem passadas ao entrevistado. O André e o Guilerme, com o celular, gravaram o audio da entrevista para enseguida ela ser editada pelo Guilherme e pelo João no aplicativo da filmora. O site foi programado pelo Visual
+                    Studio Code, codada pela Nicolly, e ela juntou as ideias de todos do grupo para que o resultado final seja completo. Em suma, a ideia de descrição e roteiro do hotsite foi elaborada pelo Nahuel. A explicação dos códigos do site foi
+                    repassada pela Nicolly. </div>
         </div>
         <br><br>
+        <div id="participantes">
+            <br><br>
 
-        <!--centralizado-->
-        <div class="d-flex justify-content-center">
-            <!--redondo, fundo preto, tamanho, texto centralizado, texto branco, tamanho, tamanho margem-->
-            <p class="rounded bg-black w-25 text-center text-light p-3 m-1">sjdflkajfkaj
-                <br>
-                <!--imagem-->
-                <img src="https://listimg.pinclipart.com/picdir/s/44-445452_crash-bandicoot-clipart-tinkercad-crash-bandicoot-png-download.png" width="200" height="250" alt="">
-                <br> jksjdflkajsdkfjkafj jksjdflkajsdkfjkafj jksjdflkajsdkfjkafj jksjdflkajsdkfjkafj jksjdflkajsdkfjkafj
-            </p>
+            <div class="d-flex justify-content-center text-light">
+                <h1 class="font-weight-lighter">Participantes</h1>
+            </div>
+            <br><br><br><br>
+        </div>
+        <div class="d-flex justify-content-xl-center container-fluid ">
 
-            <p class="rounded bg-black w-25 text-center text-light p-3 m-1">sjdflkajfkaj
-                <br>
-                <img src="https://listimg.pinclipart.com/picdir/s/44-445452_crash-bandicoot-clipart-tinkercad-crash-bandicoot-png-download.png" width="200" height="250" alt="">
-                <br> jksjdflkajsdkfjkafj jksjdflkajsdkfjkafj jksjdflkajsdkfjkafj jksjdflkajsdkfjkafj jksjdflkajsdkfjkafj
-            </p>
+            <div style="font-size:22px">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <p class="text-white ">
+                                <img src="participantes/andre.jpg" width="320px" height="320px">
+                                <p class="text-center text-white">Andre</p>
+                            </p>
 
-            <p class="rounded bg-black w-25 text-center text-light p-3 m-1">sjdflkajfkaj
-                <br>
-                <img src="https://listimg.pinclipart.com/picdir/s/44-445452_crash-bandicoot-clipart-tinkercad-crash-bandicoot-png-download.png" width="200" height="250" alt="">
-                <br> jksjdflkajsdkfjkafj jksjdflkajsdkfjkafj jksjdflkajsdkfjkafj jksjdflkajsdkfjkafj jksjdflkajsdkfjkafj
+                        </div>
+                        <div class="col-sm">
+                            <p class="text-white ">
+                                <img src="participantes/joao.jpg" width="320px" height="320px">
+                            </p>
+                            <p class="text-center text-white">João</p>
+                        </div>
+                        <div class="col-sm">
+                            <p class="text-white ">
+                                <img src="participantes/guilherme.jpg" width="320px" height="320px">
+                            </p>
+                            <p class="text-center text-white">Guilherme</p>
+                        </div>
+                    </div>
 
-            </p>
+                    <div class="row justify-content-around">
+                        <div class="col-4">
+                            <p class="text-white p-3 m-1">
+                                <img src="participantes/nahuel.jpg" width="320px" height="320px">
+                                <p class="text-center text-white">Nahuel</p>
+
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <p class="text-white p-3 m-1">
+                                <img src="participantes/nicolly.jpg" width="320px" height="320px">
+                                <p class="text-center text-white">Nicolly</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
-        <br><br><br><br><br><br><br><br>
-
-        <div class="d-flex justify-content-center text-light">
-            <h1 class="font-weight-lighter">Codigos</h1>
-        </div>
-        <br><br>
-
-        <div class="d-flex justify-content-center">
-            <!--redondo, fundo branco, tamanho, texto centralizado, texto preto, tamanho, tamanho margem-->
-            <p class="rounded bg-light w-25 text-center text-black p-3 m-1">
-                &lt;div class="navbar navbar-expand bg-black justify-content-between"&gt; &lt;div class="container"&gt; &lt;!--Nome do grupo com texto branco--&gt; &lt;a class="navbar-brand text-light" href="#"&gt;Robotic Generation&lt;/a&gt; &lt;ul class="navbar-nav
-                "&gt; &lt;!--botao pills=redondo m=margem entre os botoes--&gt; &lt;li class="nav-pills active m-1"&gt; &lt;a class="btn btn-outline-light p-2" ref="#"&gt;Video&lt;/a&gt; &lt;/li&gt; &lt;!--botao pills=redondo m=margem entre os botoes--&gt;
-                &lt;li class="nav-pills active m-1"&gt; &lt;a class="btn btn-outline-light p-2" href="#"&gt;Participantes&lt;/a&gt; &lt;/li&gt; &lt;!--botao pills=redondo m=margem entre os botoes--&gt; &lt;li class="nav-pills active m-1"&gt; &lt;a class="btn
-                btn-outline-light p-2" href="#"&gt;Criação&lt;/a&gt; &lt;/li&gt; &lt;/ul&gt;
-            </p>
-
-            <p class="rounded bg-light w-25 text-center text-black p-3 m-1">
-                &lt;div class="navbar navbar-expand bg-black justify-content-between"&gt; &lt;div class="container"&gt; &lt;!--Nome do grupo com texto branco--&gt; &lt;a class="navbar-brand text-light" href="#"&gt;Robotic Generation&lt;/a&gt; &lt;ul class="navbar-nav
-                "&gt; &lt;!--botao pills=redondo m=margem entre os botoes--&gt; &lt;li class="nav-pills active m-1"&gt; &lt;a class="btn btn-outline-light p-2" ref="#"&gt;Video&lt;/a&gt; &lt;/li&gt; &lt;!--botao pills=redondo m=margem entre os botoes--&gt;
-                &lt;li class="nav-pills active m-1"&gt; &lt;a class="btn btn-outline-light p-2" href="#"&gt;Participantes&lt;/a&gt; &lt;/li&gt; &lt;!--botao pills=redondo m=margem entre os botoes--&gt; &lt;li class="nav-pills active m-1"&gt; &lt;a class="btn
-                btn-outline-light p-2" href="#"&gt;Criação&lt;/a&gt; &lt;/li&gt; &lt;/ul&gt;
-            </p>
-
-            <p class="rounded bg-light w-25 text-center text-black p-3 m-1">
-                &lt;div class="navbar navbar-expand bg-black justify-content-between"&gt; &lt;div class="container"&gt; &lt;!--Nome do grupo com texto branco--&gt; &lt;a class="navbar-brand text-light" href="#"&gt;Robotic Generation&lt;/a&gt; &lt;ul class="navbar-nav
-                "&gt; &lt;!--botao pills=redondo m=margem entre os botoes--&gt; &lt;li class="nav-pills active m-1"&gt; &lt;a class="btn btn-outline-light p-2" ref="#"&gt;Video&lt;/a&gt; &lt;/li&gt; &lt;!--botao pills=redondo m=margem entre os botoes--&gt;
-                &lt;li class="nav-pills active m-1"&gt; &lt;a class="btn btn-outline-light p-2" href="#"&gt;Participantes&lt;/a&gt; &lt;/li&gt; &lt;!--botao pills=redondo m=margem entre os botoes--&gt; &lt;li class="nav-pills active m-1"&gt; &lt;a class="btn
-                btn-outline-light p-2" href="#"&gt;Criação&lt;/a&gt; &lt;/li&gt; &lt;/ul&gt;
-            </p>
-        </div>
         <br><br><br><br><br><br><br>
-
-        <!--icone 50% do tamanho-->
 
         <div class="text-center">
             <img src="icones/logo.png" class="text-center w-25">
@@ -167,13 +685,14 @@
     </div>
 
     <br>
+
     <div class="navbar navbar-expand bg-black d-flex justify-content-center">
 
         <ul class="breadcrumb bg-transparent justify-content-center">
             <li class="breadcrumb-item active"><a href="#">Home</a></li>
             <li class="breadcrumb-item"><a href="video.html">Video</a></li>
             <li class="breadcrumb-item"><a href="participantes.html">Participantes</a></li>
-
+            <li class="breadcrumb-item"><a href="tinkercard.html">Tinkercard</a></li>
         </ul>
     </div>
 
