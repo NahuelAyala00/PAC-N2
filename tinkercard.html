@@ -48,6 +48,7 @@
         
         #mainSlider .carousel-caption {
             float: right;
+            left: 50%;
             top: 80%;
             color: #000000;
             margin-left: 5%;
@@ -75,7 +76,6 @@
             padding: 10px 20px;
             border-radius: 30px;
             border: 30px solid transparent;
-            transition: .10s;
         }
         
         .main-btn:hover {
@@ -147,9 +147,53 @@
                     <div class="d-flex justify-content-center">
                         <img src="tinkercard/tinkercard1.png" class="d-block w-70" alt="Tinkercard1">
                         <div class="carousel-caption d-none d-md-block">
-                            <h2>Tinkercard1</h2>
-                            <p>tinkercard1</p>
-                            <a href="#" class="main-btn">Sobre a aula</a>
+
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tinkercard1">
+                                Códigos1
+                            </button>
+                            <div class="modal fade" id="tinkercard1" tabindex="-1" role="dialog" aria-labelledby="tinkercard1" aria-hidden="true">
+                                <div class="modal-dialog-scrollable modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="tinkercard">Códigos usados na aula 1</h5>
+                                            <button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Fechar">
+                                                 
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body text-left ">
+                                            <p>// C++ code<br>
+                                                <br> //
+                                                <br> void setup()
+                                                <br> {
+                                                <br> pinMode(13, OUTPUT);
+                                                <br> pinMode(11, OUTPUT);
+                                                <br> pinMode(12, OUTPUT);
+                                                <br> }
+                                                <br>
+                                                <br> void loop()
+                                                <br> {
+                                                <br> digitalWrite(13, HIGH);
+                                                <br> delay(2000); // Wait for 2000 millisecond(s)
+                                                <br> digitalWrite(13, LOW);
+                                                <br> digitalWrite(11, HIGH);
+                                                <br> delay(2000); // Wait for 2000 millisecond(s)
+                                                <br> digitalWrite(11, LOW);
+                                                <br> digitalWrite(12, HIGH);
+                                                <br> delay(2000); // Wait for 2000 millisecond(s)
+                                                <br> digitalWrite(12, LOW);
+                                                <br>} </p>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                            <a href="https://www.tinkercad.com/things/jF1gdKXf4M8-start-simulating/editel?lessonid=EHD2303J3YPUS5Z&projectid=OIYJ88OJ3OPN3EA&collectionid=OIYJ88OJ3OPN3EA&sharecode=ZxPq4Q5PV7q7K7qTOTMZNb3ivqfnKxTP_wF22oRZc84" target="_blank">Ir para o tinkercard</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -157,9 +201,55 @@
                     <div class="d-flex justify-content-center">
                         <img src="tinkercard/tinkercard2.png" class="d-block w-70" alt="Tinkercard2">
                         <div class="carousel-caption d-none d-md-block">
-                            <h2>Tinkercard2</h2>
-                            <p>tinkercard2</p>
-                            <a href="#" class="main-btn">Sobre a aula</a>
+
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tinkercard2">
+                                Códigos2
+                            </button>
+                            <div class="modal fade" id="tinkercard2" tabindex="-1" role="dialog" aria-labelledby="tinkercard2" aria-hidden="true">
+                                <div class="modal-dialog-scrollable modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="tinkercard">Códigos usados na aula 2</h5>
+                                            <button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Fechar">
+                                                 
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body text-left ">
+                                            <p>unsigned int sensor;<br>
+                                                <br> int LED = 9;
+                                                <br> void setup()
+                                                <br> {
+                                                <br> Serial.begin(9600);
+                                                <br> pinMode(LED, OUTPUT);
+                                                <br>
+                                                <br> }
+                                                <br>
+                                                <br> void loop()
+                                                <br> {
+                                                <br> sensor = analogRead(A5);
+                                                <br> Serial.println(sensor);
+                                                <br>
+                                                <br> if (sensor > 509){
+                                                <br> digitalWrite(LED, HIGH);
+                                                <br> }
+                                                <br> else {
+                                                <br> digitalWrite(LED, LOW);
+                                                <br> }
+                                                <br>
+                                                <br> }
+                                            </p>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                            <a href="https://www.tinkercad.com/things/i91VX3uDs1T-ingenious-jaagub/editel?sharecode=MiDPvaMRjLB__6a26XLRi2PpzkFNAlQtBpcyM7_N-as" target="_blank">Ir para o tinkercard</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -167,9 +257,78 @@
                     <div class="d-flex justify-content-center">
                         <img src="tinkercard/tinkercard3.png" class="d-block w-70" alt="Tinkercard3">
                         <div class="carousel-caption d-none d-md-block">
-                            <h2>Tinkercard3</h2>
-                            <p>tinkercard3</p>
-                            <a href="#" class="main-btn">Sobre a aula</a>
+
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tinkercard3">
+                                Códigos3
+                            </button>
+                            <div class="modal fade" id="tinkercard3" tabindex="-1" role="dialog" aria-labelledby="tinkercard3" aria-hidden="true">
+                                <div class="modal-dialog-scrollable modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="tinkercard">Códigos usados na aula 3</h5>
+                                            <button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Fechar">
+                                                 
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body text-left ">
+                                            <p>int velMotor = 3;<br>
+                                                <br>int motorFrente = 2;
+                                                <br> int motorTras = 4;
+                                                <br> int vel = 255;
+                                                <br>
+                                                <br>
+                                                <br> void setup()
+                                                <br> {
+                                                <br> pinMode(3, OUTPUT);
+                                                <br> pinMode(2, OUTPUT);
+                                                <br> pinMode(4, OUTPUT);
+                                                <br>
+                                                <br> analogWrite(3, 0); digitalWrite(2, LOW); digitalWrite(4, LOW);
+                                                <br>
+                                                <br> }
+                                                <br>
+                                                <br> void loop()
+                                                <br> {
+                                                <br>
+                                                <br> //Sentido anti-horário
+                                                <br> analogWrite(3, vel);
+                                                <br> digitalWrite(2, HIGH);
+                                                <br> digitalWrite(4, LOW);
+                                                <br> delay(5000);
+                                                <br>
+                                                <br> //Desligando motor para inversão de sentido
+                                                <br> analogWrite(3, 0);
+                                                <br> digitalWrite(2, LOW);
+                                                <br> digitalWrite(4, LOW);
+                                                <br> delay(100);
+                                                <br>
+                                                <br> //Sentido horário
+                                                <br> analogWrite(3, vel);
+                                                <br> digitalWrite(4, HIGH);
+                                                <br> digitalWrite(2, LOW);
+                                                <br>delay(5000);
+                                                <br>
+                                                <br> //Desligando motor para inversão de sentido
+                                                <br> analogWrite(3, 0);
+                                                <br> digitalWrite(2, LOW);
+                                                <br>digitalWrite(4, LOW);
+                                                <br> delay(100);
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <br> } </p>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                            <a href="https://www.tinkercad.com/things/8iz0S5Ec38b-funky-trug/editel?sharecode=k2e6QO8uT_HG2QdrfC9DqutjjDgyxL28KhgYRnCRp6U" target="_blank">Ir para o tinkercard</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -177,9 +336,49 @@
                     <div class="d-flex justify-content-center">
                         <img src="tinkercard/tinkercard4.png" class="d-block w-70" alt="Tinkercard4">
                         <div class="carousel-caption d-none d-md-block">
-                            <h2>Tinkercard4</h2>
-                            <p>tinkercard4</p>
-                            <a href="#" class="main-btn">Sobre a aula</a>
+
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tinkercard4">
+                                Códigos4
+                            </button>
+                            <div class="modal fade" id="tinkercard4" tabindex="-1" role="dialog" aria-labelledby="tinkercard4" aria-hidden="true">
+                                <div class="modal-dialog-scrollable modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="tinkercard">Códigos usados na aula 4</h5>
+                                            <button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Fechar">
+                                                 
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body text-left ">
+                                            <p>ISR(PCINT0_vect){<br>
+                                                <br> PORTD ^= 0b00110000;
+                                                <br> }
+                                                <br> ISR(PCINT2_vect){
+                                                <br> PORTD ^= 0b00001100;
+                                                <br> }
+                                                <br>int main(void)
+                                                <br>{
+                                                <br> DDRD = 0b00111100;
+                                                <br>PORTD = 0b00011000;
+                                                <br>PCICR = 0b00000101;
+                                                <br>PCMSK2 = 0b1000000;
+                                                <br>PCMSK0 = 0b0000001;
+                                                <br>sei();
+                                                <br> while(1){
+                                                <br> }
+                                                <br> } </p>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                            <a href="https://www.tinkercad.com/things/8MpBM51jHkG-swanky-kieran/editel?sharecode=qqzCHwc30oC6FvU4K3Z7DMooNeTICI2ZwhG7opy4PZw" target="_blank">Ir para o tinkercard</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -212,26 +411,33 @@
 
 
     <br><br><br>
+    <style>
+        .bordas {
+            opacity: 1;
+        }
+    </style>
 
     <div class="container">
         <div id="accordion">
             <div class="card">
-                <div class="card-header" id="headingOne">
-                    <h5 class="mb-0 text-center rounded">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#arduino" aria-expanded="true" aria-controls="collapseOne">
+                <div class="bordas">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0 text-center rounded out ">
+                            <button class="btn btn-link btn-outline-dark rounded text-white active" data-toggle="collapse" data-target="#arduino" aria-expanded="true" aria-controls="collapseOne">
                             Arduino Uno R3
         </button>
-                    </h5>
-                </div>
+                        </h5>
+                    </div>
 
-                <div id="arduino" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body">
-                        <p class="rounded bg-black w-30 text-center text-light p-5 m-5">Arduino Uno R3
-                            <br>
-                            <img src="componentes/arduino.png" width="300" height="250" alt="Arduino Uno R3">
-                            <br> Plataforma open source ou hardware para prototipagem eletrônica, projetada com um microcontrolador Atmel AVR com suporte para entrada/saída dados já embutido, com linguagem de programação padrão baseado no em C/C++
+                    <div id="arduino" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="rounded bg-black w-30 text-center text-light p-5 m-5">Arduino Uno R3
+                                <br>
+                                <img src="componentes/arduino.png" width="300" height="250" alt="Arduino Uno R3">
+                                <br> Plataforma open source ou hardware para prototipagem eletrônica, projetada com um microcontrolador Atmel AVR com suporte para entrada/saída dados já embutido, com linguagem de programação padrão baseado no em C/C++
 
-                        </p>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -241,7 +447,7 @@
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h5 class="mb-0 text-center rounded">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#placadeensaio" aria-expanded="false" aria-controls="collapseTwo">
+                        <button class="btn btn-link btn-outline-dark rounded text-white active" data-toggle="collapse" data-target="#placadeensaio" aria-expanded="false" aria-controls="collapseTwo">
                             Placa de ensaio pequena
         </button>
                     </h5>
@@ -263,7 +469,7 @@
             <div class="card">
                 <div class="card-header" id="headingThree">
                     <h5 class="mb-0 text-center rounded">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#motorcc" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="btn btn-link btn-outline-dark rounded text-white active" data-toggle="collapse" data-target="#motorcc" aria-expanded="false" aria-controls="collapseThree">
           Motor CC
         </button>
                     </h5>
@@ -286,7 +492,7 @@
             <div class="card">
                 <div class="card-header" id="headingThree">
                     <h5 class="mb-0 text-center rounded">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#resistor" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="btn btn-link btn-outline-dark rounded text-white active" data-toggle="collapse" data-target="#resistor" aria-expanded="false" aria-controls="collapseThree">
           Resistor
         </button>
                     </h5>
@@ -308,7 +514,7 @@
             <div class="card">
                 <div class="card-header" id="headingThree">
                     <h5 class="mb-0 text-center rounded">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#led" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="btn btn-link btn-outline-dark rounded text-white active" data-toggle="collapse" data-target="#led" aria-expanded="false" aria-controls="collapseThree">
                             LED
         </button>
                     </h5>
@@ -330,7 +536,7 @@
             <div class="card">
                 <div class="card-header" id="headingThree">
                     <h5 class="mb-0 text-center rounded">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#fotorresistor" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="btn btn-link btn-outline-dark rounded text-white active" data-toggle="collapse" data-target="#fotorresistor" aria-expanded="false" aria-controls="collapseThree">
                             Fotorresistor
         </button>
                     </h5>
@@ -352,7 +558,7 @@
             <div class="card">
                 <div class="card-header" id="headingThree">
                     <h5 class="mb-0 text-center rounded">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#interruptor" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="btn btn-link btn-outline-dark rounded text-white active" data-toggle="collapse" data-target="#interruptor" aria-expanded="false" aria-controls="collapseThree">
                             Interruptor deslizante
         </button>
                     </h5>
@@ -374,7 +580,7 @@
             <div class="card">
                 <div class="card-header" id="headingThree">
                     <h5 class="mb-0 text-center rounded">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#bateria" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="btn btn-link btn-outline-dark rounded text-white active" data-toggle="collapse" data-target="#bateria" aria-expanded="false" aria-controls="collapseThree">
                             Bateria 9V
         </button>
                     </h5>
@@ -397,7 +603,7 @@
             <div class="card">
                 <div class="card-header" id="headingThree">
                     <h5 class="mb-0 text-center rounded">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#fonte" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="btn btn-link btn-outline-dark rounded text-white active" data-toggle="collapse" data-target="#fonte" aria-expanded="false" aria-controls="collapseThree">
                             Fonte de energia
         </button>
                     </h5>
