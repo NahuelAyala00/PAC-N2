@@ -89,6 +89,24 @@
         .carousel-indicators .active {
             background-color: #373737;
         }
+        
+        @media (max-width: 1024px) {
+            #navbar {
+                display: none;
+            }
+            .btn-toggle {
+                display: block;
+            }
+        }
+        
+        @media (min-width: 1023px) {
+            #navbarcell {
+                display: none;
+            }
+            .btn-toggle {
+                display: inline;
+            }
+        }
     </style>
 
 
@@ -99,7 +117,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
 
-
 </head>
 
 <body>
@@ -107,36 +124,78 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
+    <!--navbar PC-->
+    <div id="navbar">
+        <div class="navbar fixed-top navbar-expand bg-black justify-content-between">
+            <div class="container">
 
-    <div class="navbar navbar-expand bg-black justify-content-between">
-        <div class="container">
+                <a class="navbar-brand text-light" href="#index">Robotic Generation</a>
+                <ul class="navbar-nav ">
 
-            <a class="navbar-brand text-light" href="#index">Robotic Generation</a>
-            <ul class="navbar-nav ">
+                    <li class="nav-pills active m-1">
+                        <a class="btn btn-outline-light px-4 py-2" href="#tinkercard1">Tinkercard</a>
+                    </li>
 
-                <li class="nav-pills active m-1">
-                    <a class="btn btn-outline-light px-4 py-2" href="#tinkercard1">Tinkercard</a>
-                </li>
+                    <li class="nav-pills active m-1">
+                        <a class="btn btn-outline-light px-4 py-2" href="#componentes">Componentes</a>
+                    </li>
 
-                <li class="nav-pills active m-1">
-                    <a class="btn btn-outline-light px-4 py-2" href="#componentes">Componentes</a>
-                </li>
+                    <li class="nav-pills active m-1">
+                        <a class="btn btn-outline-light px-4 py-2" href="#video">Video</a>
+                    </li>
 
-                <li class="nav-pills active m-1">
-                    <a class="btn btn-outline-light px-4 py-2" href="#video">Video</a>
-                </li>
+                    <li class="nav-pills active m-1">
+                        <a class="btn btn-outline-light px-4 py-2" href="#criacao">Criação</a>
+                    </li>
 
-                <li class="nav-pills active m-1">
-                    <a class="btn btn-outline-light px-4 py-2" href="#criacao">Criação</a>
-                </li>
-
-                <li class="nav-pills active m-1">
-                    <a class="btn btn-outline-light px-4 py-2" href="#participantes">Participantes</a>
-                </li>
+                    <li class="nav-pills active m-1">
+                        <a class="btn btn-outline-light px-4 py-2" href="#participantes">Participantes</a>
+                    </li>
 
 
-            </ul>
+                </ul>
+            </div>
         </div>
+    </div>
+
+    <!--navbar CELL-->
+    <div class="pos-f-t fixed-top" id="navbarcell">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4 justify-content-between">
+                <ul></ul>
+                <a class="navbar-brand text-light" href="#index">Robotic Generation</a>
+                <ul class="navbar-nav ">
+
+                    <li class="nav-pills active m-1">
+                        <a class="btn btn-outline-light px-4 py-2" href="#tinkercard1">Tinkercard</a>
+                    </li>
+
+                    <li class="nav-pills active m-1">
+                        <a class="btn btn-outline-light px-4 py-2" href="#componentes">Componentes</a>
+                    </li>
+
+                    <li class="nav-pills active m-1">
+                        <a class="btn btn-outline-light px-4 py-2" href="#video">Video</a>
+                    </li>
+
+                    <li class="nav-pills active m-1">
+                        <a class="btn btn-outline-light px-4 py-2" href="#criacao">Criação</a>
+                    </li>
+
+                    <li class="nav-pills active m-1">
+                        <a class="btn btn-outline-light px-4 py-2" href="#participantes">Participantes</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
     </div>
 
     <br><br><br><br><br><br><br><br><br>
@@ -146,7 +205,7 @@
         <div class="text-center container">
             <img src="icones/logo.png" class="text-center w-25">
         </div>
-        <br><br><br><br>
+        <br><br><br><br><br>
         <div class="container">
         </div>
     </div>
@@ -156,7 +215,7 @@
     <!--Carousel-->
     <div>
         <div id="tinkercard1">
-            <br><br>
+            <br><br><br>
 
             <div class="d-flex justify-content-center text-light ">
                 <h1 class="font-weight-lighter">Tinkercard</h1>
@@ -220,7 +279,7 @@
     </div>
 
     <!--Modal (tentei colocar esse modal no carousel mas so dava erro)-->
-    <div class="d-xl-flex justify-content-center  ">
+    <div class="d-md-flex justify-content-center  ">
 
         <div class="p-1">
             <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#Tinkercard1">
@@ -428,7 +487,7 @@
     <div>
         <div id="componentes">
             </li>
-            <br><br>
+            <br><br><br>
             <div class="d-flex justify-content-center text-light ">
                 <h1 class="font-weight-lighter">Componentes e funções</h1>
             </div>
@@ -590,7 +649,7 @@
         <div class="video1">
 
             <br><br><br><br><br><br><br>
-            <div class="d-xl-flex justify-content-center text-light">
+            <div class="d-md-flex justify-content-center text-light">
                 <h1 class="font-weight-lighter">Video</h1>
             </div>
             <br><br>
@@ -612,9 +671,9 @@
     <!--Criacao-->
     <div>
         <div id="criacao">
-            <br><br>
+            <br><br><br>
 
-            <div class="d-lg-flex justify-content-center text-light">
+            <div class="d-md-flex justify-content-center text-light">
                 <h1 class="font-weight-lighter">Criação</h1>
             </div>
             <br><br>
@@ -642,7 +701,7 @@
     <!--Participantes-->
     <div>
         <div id="participantes">
-            <br><br>
+            <br><br><br>
 
             <div class="d-flex justify-content-center text-light">
                 <h1 class="font-weight-lighter">Participantes</h1>
